@@ -1,0 +1,162 @@
+version: '3.1'
+intents:
+- add_multiple_parties
+- advanced_receipt
+- affirm
+- block_and_unblock
+- bot_challenge
+- card_payment
+- change_receipt_date
+- change_roe
+- cheque_payment
+- cheque_receipt
+- credit_receipt
+- deduction_payment
+- deny
+- discount_cash_receipt
+- extra_collection
+- extra_payment
+- generate_payment
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- receipt_creation
+- separate_vat_bank_charges
+- steps_to_create_cash_receipt
+- steps_to_generate_payment
+- upi_payment
+- inform_user_details
+
+entities:
+  - PERSON
+  - email
+
+slots:
+  name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: PERSON
+      not_intent: chitchat
+      conditions:
+      - active_loop: userdetailsform
+        requested_slot: name
+  email:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: email
+      not_intent: chitchat
+      conditions:
+      - active_loop: userdetailsform
+        requested_slot: email
+forms:
+  userdetailsform:
+    ignored_intents: 
+    - chitchat
+    required_slots:
+      - name
+      - email
+
+responses:
+  utter_add_multiple_parties:
+  - text: You can add multiple parties in an cash receipt by selecting Multiple party
+      checkbox in the receipt module.
+  utter_advanced_receipt:
+  - text: An advanced receipt will not create any financial impact on your accounts.
+      It is used to generate dummy receipts for clients. Steps for Creating an Advanced
+      Receipt. 1. Goto the 'Back Office' option in the main menu. 2.Click on 'Advanced
+      Receipt.' 3.. Enter the required information and save.
+  utter_block_and_unblock:
+  - text: 'Steps to block and Unblock an account: 1. Go to the ''Tools'' section of
+      your account settings. 2. Select ''Accounts'' from the available options. 3.
+      In the ''Accounts'' section, find the option for ''Account Blocking''. 4. Locate
+      the existing account that you wish to unblock and select the checkbox next to
+      it. 5. Click the ''Delete'' button to remove the account from the blocked list.
+      6. Return to the receipt page to ensure that the account has been unblocked.
+      7. Click ''Save'' to confirm the changes and update your account settings. 8.
+      Verify that the previously blocked account is now accessible and can be used
+      normally.'
+  utter_card_payment:
+  - text: 'The steps to do a cash payment are : 1.Go to the ''Masters'' section of
+      your account. 2. Select the ''Credit Card'' option. 3.Click on ''Add New''.
+      4. Fill in the required information for the new credit card, such as the code
+      ,name, currency and  main ledger. 5. Save the new credit card information by
+      clicking on ''Save''.'
+  utter_change_receipt_date:
+  - text: Steps to  set forward and backward limit of date in receipt. 1.Goto 'tools'
+      in the main menu. 2. Click on the 'Admin' settings. 3.In 'General settings',
+      set the number of days for backward transactions and forward transactions. 4.Save
+      the changes.
+  utter_change_roe:
+  - text: Steps to create or change Rate Of Exchange(ROE). 1. Goto 'Masters' in the
+      main menu. 2.Click on 'currency'. 3.Create a new currency by adding icon. 4.For
+      adjusting the variance of ROE click on the edit item icon of the currency.
+  utter_cheque_payment:
+  - text: 1.Go to Masters section of your account. 2.Select the Bank option. 3.Inside
+      the bank section, click on the Cheque Book. 4.Click on Add New. 5.Fill in the
+      required information. 6.Save the new cheque book details by clicking on Save.
+  utter_cheque_receipt:
+  - text: You can generate a cheque receipt from the Receipt module given in Back
+      Office. Steps to create a cheque receipt 1.Click on the Receipt module in the
+      Back Office. 2.Select a mode of Receipt. 3.Fill the Party details.
+  utter_credit_receipt:
+  - text: You can generate a cash receipt from the Receipt module given in Back Office.
+      Steps to create a credit receipt. 1.Click on the Receipt module in the Back
+      Office. 2.Select a mode of Receipt. 3.Fill the Party details.
+  utter_deduction_payment:
+  - text: You can add deduction to a payment by clicking on Deduction check box in
+      the Payment module.
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_discount_cash_receipt:
+  - text: You can add discount in cash receipt by clicking on Discount check box in
+      the Receipt module
+  utter_extra_collection:
+  - text: You can add extra collection in cash receipt by clicking on Extra Collection
+      checkbox in the Receipt module.
+  utter_extra_payment:
+  - text: You can add extra payment in payment module by clicking on Extra payment
+      check box in the payment module.
+  utter_generate_payment:
+  - text: You can generate a payment from the payment module given in Back Office.
+  utter_goodbye:
+  - text: Bye
+  utter_happy:
+  - text: Great, carry on!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_receipt_creation:
+  - text: You can generate a cash receipt from the Receipt module given in Back Office
+  utter_separate_vat_bank_charges:
+  - text: The option 'Line for bank commission separate entry' is used for separate
+      the VAT and Bank charges from the receipt. you can enable and disable this function
+      by using the checkbox.
+  utter_steps_to_create_cash_receipt:
+  - text: Steps to create a cash receipt 1. Click on the Receipt module in the Back
+      Office. 2. Select a mode of Receipt. 3. Fill the Party details.
+  utter_steps_to_generate_payment:
+  - text: Steps to create a payment. 1. Click on the payment in the Back Office. 2.
+      Select a mode of payment. 3. Fill the Party details.
+  utter_upi_payment:
+  - text: steps for making a UPI payment. 1.Click on the payment module in the Back
+      Office. 2.Select a mode of payment as 'Transfer'. 3. Fill the Party details.
+
+  utter_email_tnx:
+  - text: "Thankyou for providing email, you can continue now"
+
+
+
+actions:
+
+- action_submit_userdetailsform
+- action_ask_userdetailsform_name
+- action_ask_userdetailsform_email
+- action_default_fallback
+- action_utter_please_rephrase
+
+session_config:
+  carry_over_slots_to_new_session: True
+  session_expiration_time: 60
+

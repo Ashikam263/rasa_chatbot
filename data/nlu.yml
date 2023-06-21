@@ -1,0 +1,354 @@
+version: '3.1'
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's gos
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - close
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - what is your name?
+- intent: receipt_creation
+  examples: |
+    - How can i generate a cash receipt
+    - How can i create a cash receipt
+    - How can i develop a cash receipt
+    - Where can i generate a cash receipt
+    - From Where can i generate a cash receipt
+    - Where is the link to generate a cash receipt
+    - Where is the module for generating a receipt
+    - Where the module to generate a cash receipt available
+    - Where the module to create a receipt available
+    - Where the link to generate a cash receipt available
+- intent: steps_to_create_cash_receipt
+  examples: |
+    - What are the steps to create a cash receipt?
+    - What is the process for producing a cash receipt?
+    - What steps should I follow to create a cash receipt?
+    - What is the method for creating a cash receipt?
+    - What is the procedure for generating a cash receipt?
+    - What are the guidelines for generating a cash receipt?
+    - What is the approach to creating a cash receipt?
+    - What are the steps required to generate a cash receipt?
+    - What are the instructions for creating a cash receipt?
+    - What are the necessary steps to create a cash receipt?
+- intent: add_multiple_parties
+  examples: |
+    - How can i add multiple parties in a cash receipt?
+    - How can i include multiple parties in a cash receipt?
+    - How can i participate multiple parties in a cash receipt?
+    - What is the process for including multiple recipients on a cash receipt?
+    - Is there a way to list multiple parties on a cash receipt?
+    - What is the procedure for including multiple parties on a cash receipt?
+    - What is the technique for adding more than one parties on a cash receipt?
+    - What is the approach for including multiple parties on a cash receipt?
+- intent: extra_collection
+  examples: |
+    - What steps do I need to take to include an extra collection in a cash receipt?
+    - What are the steps to include an extra collection in a cash receipt?
+    - What is the way to include an extra collection in a cash receipt?
+    - What approach should I take to include an extra collection in a cash receipt?
+    - What is the way to insert an extra collection into a cash receipt?
+    - What is the approach to append a extra collection to a receipt?
+    - What is the process for appending a extra collection to a cash receipt?
+    -  I want to add extra collection to my receipt, how can i do that?
+    - How can I include an extra collection in my receipt?
+    - How can i add extra collection in cash receipt?
+- intent: discount_cash_receipt
+  examples: |
+    - How can i add discount in cash receipt?
+    - What steps do I need to take to include a discount in a cash receipt?
+    - What are the steps to include an discount in a cash receipt?
+    - What is the way to include an discount in a cash receipt?
+    - What approach should I take to include an discount in a cash receipt?
+    - What is the way to insert an discount into a cash receipt?
+    - What is the approach to append a discount to a receipt?
+    - What is the process for appending a discount to a cash receipt?
+    -  I want to add discount to my receipt, how can i do that?
+    - How can I include an discount in my receipt?
+- intent: block_and_unblock
+  examples: |
+    - what is account bloking and how to unblock
+    - How can I tell if my account has been blocked?
+    - How can I prevent my account from being blocked in the future?
+    -  Can a blocked account be reinstated, and what steps are required to do so?
+    - What are the reasons why an account might get blocked?
+    - Is it possible to have a blocked account reinstated?
+    - How long does it typically take to get a blocked account reinstated?
+    - Can I still access my account while it is blocked?
+    -  Is it possible to unblock a blocked account, and if so, how?
+    - What steps do I need to take to reinstate a blocked account?
+- intent: card_payment
+  examples: |
+    - How do I choose card payment as a mode of receipt?
+    - What are the steps involved in selecting card payment as a receipt method?
+    - What is the process for selecting card payment as a mode of receipt?
+    - Is it possible to use a credit card for receiving payments?
+    - What is the process for setting up a credit card as a mode of payment reception?
+    - Can you walk me through the steps for selecting a credit card for payment receipt?
+    - How can I add a credit card as a payment method to receive payments?
+    - What information do I need to provide when choosing a credit card as a receipt method?
+- intent: cheque_payment
+  examples: |
+    - What is the process for making a payment using a cheque?
+    - Can you walk me through the steps involved in paying with a cheque?
+    - What information do i need to include on a cheque when making a payment?
+    - Could you guide me through the process of making a payment using a cheque?
+    - What is the stepbystep procedure for paying via cheque?
+    - Can you explain how to make a payment using a cheque?
+    - What are the steps I need to take to pay with a cheque?
+    -  How do i make a payment using a cheque, and can you break down the process for me?
+    - Could you please provide me with an overview of the steps required to pay with a cheque?
+    - Would you be able to demonstrate the process of making a payment via cheque?
+    -  What does the process of paying with a cheque, andcould you walk me through it?
+- intent: credit_receipt
+  examples: |
+    - How to make a credit Receipt?
+    - What are the steps to create a credit receipt?
+    - Can you provide a guide for making a credit receipt?
+    - What information should be included in a credit receipt?
+    - What is the process for generating a credit receipt?
+    - What are the best practices for preparing a credit receipt?
+    - How can I ensure the accuracy of a credit receipt?
+    - What are some common mistakes to avoid while making a credit receipt?
+    - How can i generate a credit receipt?
+    - What is the process for creating a credit receipt?
+    - Can you explain how to generate a credit receipt?
+    - What steps are involved in producing a credit receipt?
+    - Is there a specific method for creating a credit receipt?
+    - How do I go about making a credit receipt?
+    - What are the requirements for generating a credit receipt?
+    - Could you walk me through the process of creating a credit receipt?
+    - Can you provide instructions for producing a credit receipt?
+    - What do I need to do to generate a credit receipt?
+    - Is there a template or format I should use when creating a credit receipt?
+- intent: upi_payment
+  examples: |
+    - What are the steps for making a UPI payment?
+    - How can i done upi payment ?
+    - Can you provide a guide on how to do a UPI payment?
+    - How do I initiate a UPI payment?
+    - What is the process for completing a UPI payment?
+    - Are there any specific requirements for making a UPI payment?
+    - What are the different ways to make a UPI payment?
+    - Is there any limit on the amount of money I can transfer through UPI?
+    - How do I ensure the security of my UPI payment?
+    - Are there any fees associated with UPI payments?
+    - What should I do if my UPI payment fails?
+- intent: change_roe
+  examples: |
+    - How can i change the ROE?
+    - How do i modify the ROE?
+    - How to change Rate of Exchange?
+    - Steps to Modify Rate of Exchange?
+    - Maximum allowed ROE adjustment variance.
+    - What is the procedure for modifying the Exchange Rate?
+    - What is the process for altering the ROE?
+    - What is the maximum permissible variance for ROE adjustment?
+    - The highest permissible difference in ROE adjustment?
+    - What are the procedures for changing the ROE?
+- intent: change_receipt_date
+  examples: |
+    - How can i change the receipt date?
+    - How can i change the transaction date limit?
+    - How do I modify the transaction date limit?
+    - How do I adjust the transaction date limit?
+    - What is the process for altering the date on the receipt?
+    - What is the process to modify the receipt date?
+    - What is the procedure for adjusting the transaction date limit?
+    - What is the procedure for altering the transaction date range?
+    - What is the process for adjusting the transaction date boundary?
+    - What is the method for modifying the transaction date range?
+- intent: advanced_receipt
+  examples: |
+    - What is Advanced Receipt Doc.No?
+    - Why advanced receipt is used?
+    - How to create an advanced receipt?
+    - Steps to create an advanced receipt.
+    - Uses of advanced receipt.
+    - Could you explain what Advanced Receipt Doc. No. means?
+    - What does the term Advanced Receipt Doc. No. mean?
+    - What are the steps for generating an advanced receipt?
+    - What is the process for producing an advanced receipt?
+    - What are the purposes of an advanced receipt?
+- intent: separate_vat_bank_charges
+  examples: |
+    - What is the purpose of the line item for separately recording bank commission?
+    - How to separate VAT and bank charges from the receipt?
+    - What is the use of Line for bank commission separate entry?
+    - What is the method for segregating VAT and bank charges from the receipt?
+    - What are the steps to distinguish VAT and bank charges from the receipt?
+    - What is the purpose of including a separate line item for bank commission?
+    - What is the purpose of using a separate line for bank commission entry?
+    - What is the purpose of creating a separate line for bank commission entry?
+    - What are the steps to separate VAT and bank charges from a receipt?
+    - is it possible to seperate VAT and bank charges from receipt?
+- intent: cheque_receipt
+  examples: |
+    - How can i generate a cheque receipt?
+    - Can you guide me on how to create a cheque receipt?
+    - What are the steps involved in generating a cheque receipt?
+    - Is there a template available for generating a cheque receipt?
+    - What information should be included in a cheque receipt?
+    - Can you recommend software for creating cheque receipts?
+    - How can I design a custom cheque receipt for my business?
+    - What is the purpose of a cheque receipt and how do I create one?
+    - Are there any legal requirements for generating a cheque receipt?
+    - What is the procedure for generating a cheque receipt?
+    - How do I go about creating a cheque receipt?
+    - What are the steps to create a cheque receipt?
+    - What are the stages of producing a cheque receipt?
+- intent: generate_payment
+  examples: |
+    - How can i generate a payment
+    - How can i create a payment
+    - How can i develop a payment
+    - Where can i generate a payment
+- intent: steps_to_generate_payment
+  examples: |
+    - What are the steps to create a payment?
+    - What is the process for payment?
+    - What are the steps required to generate a payment?
+    - What are the instructions for creating a payment?
+    - What are the necessary steps to create a payment?
+    - what are the steps to create a payment
+- intent: extra_payment
+  examples: |
+    - How can i add extra payment?
+    - What steps do I need to take to include an extra payment ?
+    - What are the steps to include an extra payment?
+    - What is the way to include an extra payment?
+- intent: deduction_payment
+  examples: |
+    - How can i add deduction in payment?
+    - What steps do I need to take to include a deduction in a payment?
+    - What are the steps to include a deduction in a payment?
+    - What is the way to include a deduction in a payment?
+    - What approach should I take to include a deduction in a payment?
+
+- intent: inform_user_details
+  examples: |
+    - I am [indraja](PERSON)
+    - I am [Indraja](PERSON)
+    - I am [agy](PERSON)
+    - I am [Agy](PERSON)
+    - My name is [mithun](PERSON)
+    - My name is [anu](PERSON)
+    - My name is [Dibyasha](PERSON)
+    - My name is [bindu](PERSON)
+    - call me [ajay](PERSON)
+    - call me [Navaz](PERSON)
+    - call me [Ananthan](PERSON)
+    - call me [Arjun](PERSON)
+    - myself [arjun](PERSON)
+    - myself [Amal](PERSON)
+    - myself [Arun](PERSON)
+    - myself [sanil](PERSON)
+    - I go by the name of [Anshad](PERSON)
+    - I go by the name of [Vivek](PERSON)
+    - I go by the name of [Aadhi](PERSON)
+    - I go by the name of [Adarsh](PERSON)
+    - [sreejith](PERSON) is what people call me
+    - [Anoop](PERSON) is what people call me
+    - [sharon](PERSON) is what people call me
+    - [aswin](PERSON) is what people call me
+    - You can call me [Fawas](PERSON)
+    - You can call me [sachin](PERSON)
+    - You can call me [devika](PERSON)
+    - You can call me [arunima](PERSON)
+    - [subin](PERSON)
+    - [akash](PERSON)
+    - [megha](PERSON)
+    - [silpa](PERSON)
+    - my email is [indraja@example.com](email)
+    - [indraja@gmail.com](email)
+    - [indraja.ds21@duk.ac.in](email)
+    - [john.doe@example.com](email)
+    - [mary.smith@gmail.com](email)
+    - [alex.wilson@yahoo.com](email)
+    - [sarah.jones@hotmail.com](email)
+    - [michael.brown@outlook.com](email)
+
+
+- regex: email
+  examples: |
+    - [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
+    

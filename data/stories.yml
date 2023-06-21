@@ -1,0 +1,108 @@
+version: '3.1'
+
+stories:
+
+- story: happy path
+- steps:
+  - intent: mood_great
+  - action: utter_happy
+  
+- story: receipt generation
+  steps:
+  - intent: receipt_creation
+  - action: utter_receipt_creation
+
+- story: steps to create cash receipt
+  steps:
+  - intent: steps_to_create_cash_receipt
+  - action: utter_steps_to_create_cash_receipt
+
+- story: add multiple parties
+  steps:
+  - intent: add_multiple_parties
+  - action: utter_add_multiple_parties
+
+- story: extra collection
+  steps: 
+  - intent: extra_collection
+  - action: utter_extra_collection
+
+- story: discount
+  steps:
+  - intent: discount_cash_receipt
+  - action: utter_discount_cash_receipt
+
+- story: block and unblock
+  steps: 
+  - intent: block_and_unblock
+  - action: utter_block_and_unblock
+
+- story: card payment
+  steps: 
+  - intent: card_payment
+  - action: utter_card_payment
+
+- story: cheque payment
+  steps:
+  - intent: cheque_payment
+  - action: utter_cheque_payment
+
+- story: credit receipt
+  steps:
+  - intent: credit_receipt
+  - action: utter_credit_receipt
+
+- story: upi payment
+  steps:
+  - intent: upi_payment
+  - action: utter_upi_payment
+
+- story: credit receipt
+  steps:
+  - intent: credit_receipt
+  - action: utter_credit_receipt
+
+- story: change roe
+  steps:
+  - intent: change_roe
+  - action: utter_change_roe
+
+- story: change receipt date
+  steps:
+  - intent: change_receipt_date
+  - action: utter_change_receipt_date
+
+- story: advanced receipt
+  steps:
+  - intent: advanced_receipt
+  - action: utter_advanced_receipt
+
+- story:  vat bank charges
+  steps:
+  - intent: separate_vat_bank_charges
+  - action: utter_separate_vat_bank_charges
+
+- story: cheque receipt
+  steps:
+  - intent: cheque_receipt
+  - action: utter_cheque_receipt
+
+- story: generate payment
+  steps:
+  - intent: generate_payment
+  - action: utter_generate_payment
+
+- story: steps to generate payment
+  steps:
+  - intent: steps_to_generate_payment
+  - action: utter_steps_to_generate_payment
+
+- story: extra payment
+  steps:
+  - intent: extra_payment
+  - action: utter_extra_payment
+
+- story: deduction payment
+  steps:
+  - intent: deduction_payment
+  - action: utter_deduction_payment

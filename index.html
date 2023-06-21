@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div 
+            id="rasa-chat-widget" 
+            data-websocket-url="http://localhost:5005/"  
+            data-height=475>
+        </div>
+        <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
+        <script>
+            window.addEventListener('load', function () {
+                const chatWidget = document.getElementById('rasa-chat-widget');
+                const socketUrl = chatWidget.getAttribute('data-websocket-url');
+                const height = parseInt(chatWidget.getAttribute('data-height'));
+                
+                const chatClient = new RasaChat.default({ socketUrl, title: 'Rasa Chatbot' });
+                chatClient.initialize().then(() => {
+                    chatClient.openChatWindow();
+                });
+                
+                chatClient.on('chatOpened', () => {
+                    chatWidget.style.height = height + 'px';
+                });
+                
+                chatClient.attachWidget(chatWidget);
+            });
+        </script>
+    </body>
+</html>

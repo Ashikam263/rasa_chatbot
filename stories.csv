@@ -1,0 +1,43 @@
+story,intent,action
+happy path,mood_great,
+happy path,,utter_happy
+receipt generation,receipt_creation,
+receipt generation,,utter_receipt_creation
+steps to create cash receipt,steps_to_create_cash_receipt,
+steps to create cash receipt,,utter_steps_to_create_cash_receipt
+add multiple parties,add_multiple_parties,
+add multiple parties,,utter_add_multiple_parties
+extra collection,extra_collection,
+extra collection,,utter_extra_collection
+discount,discount_cash_receipt,
+discount,,utter_discount_cash_receipt
+block and unblock,block_and_unblock,
+block and unblock,,utter_block_and_unblock
+card payment,card_payment,
+card payment,,utter_card_payment
+cheque payment,cheque_payment,
+cheque payment,,utter_cheque_payment
+credit receipt,credit_receipt,
+credit receipt,,utter_credit_receipt
+upi payment,upi_payment,
+upi payment,,utter_upi_payment
+credit receipt,credit_receipt,
+credit receipt,,utter_credit_receipt
+change roe,change_roe,
+change roe,,utter_change_roe
+change receipt date,change_receipt_date,
+change receipt date,,utter_change_receipt_date
+advanced receipt,advanced_receipt,
+advanced receipt,,utter_advanced_receipt
+vat bank charges,separate_vat_bank_charges,
+vat bank charges,,utter_separate_vat_bank_charges
+cheque receipt,cheque_receipt,
+cheque receipt,,utter_cheque_receipt
+generate payment,generate_payment,
+generate payment,,utter_generate_payment
+steps to generate payment,steps_to_generate_payment,
+steps to generate payment,,utter_steps_to_generate_payment
+extra payment,extra_payment,
+extra payment,,utter_extra_payment
+deduction payment,deduction_payment,
+deduction payment,,utter_deduction_payment
