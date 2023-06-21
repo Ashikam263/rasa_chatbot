@@ -59,4 +59,10 @@ Stories.yml
 1. It will go to stories.yml and find the action for the question (action for greet: utter_greet)
 
 Domain.yml
-1. It will go to domain.yml and the text that attach with the action 2. Dispalys the answe
+1. It will go to domain.yml and the text that attach with the action 2. Dispalys the answer
+
+
+--------------------------------------------------------------------------------------------------------------
+rasa run actions: Code for running actions.py file
+rasa run -m models --enable-api --endpoints endpoints.yml --cors "*"  : Code for running API
+----------------------------------------------------------------------------------------------------------------
