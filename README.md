@@ -7,11 +7,14 @@ Rasa NLU (Natural Language Understanding): This part is concerned with understan
 Rasa Core: This component deals with the dialogue management and conversation flow of the chatbot. By creating stories, which are instances of possible conversations, and training a machine learning model to predict the next action based on the conversation history, enables developers to construct interactive and dynamic conversations. Rasa Core handles the chatbot's actions, responses, and dialogue flow.
 
 Steps FOR Creating a ChaTBOT:
+
 1. Create a virtual environment and activate the virtual environment
 
 2. In the activated environment, install Rasa.
+
 python -m pip install rasa ------> installing rasa
-pip3 install--upgrade rasa ------->upgrading rasa if already rasa installed before.
+
+pip3 install--upgrade rasa -------> upgrading rasa if already rasa installed before.
 
 4. pip install spacy (rasa uses spacy library):
 
