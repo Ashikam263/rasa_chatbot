@@ -70,4 +70,4 @@ Domain.yml
 --------------------------------------------------------------------------------------------------------------
 rasa run actions: Code for running actions.py file
 rasa run -m models --enable-api --endpoints endpoints.yml --cors "*"  : Code for running API
-----------------------------------------------------------------------------------------------------------------
+
