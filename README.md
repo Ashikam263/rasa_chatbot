@@ -6,6 +6,8 @@ Rasa consists of two main components: Rasa NLU and Rasa Core.
 Rasa NLU (Natural Language Understanding): This part is concerned with understanding and extracting user messages. It classifies intents—the user's intention—and extracts entities—relevant data—from the user's input using machine learning models. Rasa NLU is capable of handling natural language variants, synonyms, and contextual understanding and may be trained on customized data to understand domain-specific language.
 Rasa Core: This component deals with the dialogue management and conversation flow of the chatbot. By creating stories, which are instances of possible conversations, and training a machine learning model to predict the next action based on the conversation history, enables developers to construct interactive and dynamic conversations. Rasa Core handles the chatbot's actions, responses, and dialogue flow.
 
+<img src="https://github.com/indrajanambiar/rasa_chatbot/blob/master/chatbot.png" alt="My_Demo" width="300" height="200">
+
 Steps FOR Creating a ChaTBOT:
 
 1. Create a virtual environment and activate the virtual environment
