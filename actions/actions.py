@@ -78,21 +78,21 @@ class AskForName(Action):
             return [SlotSet("name", value)]
 
 # Get the user's email address.
-class AskForEmail(Action):
-    def name(self) -> Text:
-        return "action_ask_userdetailsform_email"
+# class AskForEmail(Action):
+#     def name(self) -> Text:
+#         return "action_ask_userdetailsform_email"
 
-    def run(
-        self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: DomainDict
-    ) -> List[EventType]:
-        name = tracker.get_slot("name")
-        presets = [
-            f"It's a pleasure to meet you, {name}. Please enter your email address.",
-            f"Nice to see you, {name}. Please provide your email address."
-        ]
-        mail_q = random.choice(presets)
-        dispatcher.utter_message(text=mail_q)
-        return []
+#     def run(
+#         self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: DomainDict
+#     ) -> List[EventType]:
+#         name = tracker.get_slot("name")
+#         presets = [
+#             f"It's a pleasure to meet you, {name}. Please enter your email address.",
+#             f"Nice to see you, {name}. Please provide your email address."
+#         ]
+#         mail_q = random.choice(presets)
+#         dispatcher.utter_message(text=mail_q)
+#         return []
 
 
 

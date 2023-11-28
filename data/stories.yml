@@ -7,102 +7,67 @@ stories:
   - intent: mood_great
   - action: utter_happy
   
-- story: receipt generation
+- story: fee structure
   steps:
-  - intent: receipt_creation
-  - action: utter_receipt_creation
+  - intent: fee_structure
+  - action: utter_fee_structure
 
-- story: steps to create cash receipt
+- story: placement
   steps:
-  - intent: steps_to_create_cash_receipt
-  - action: utter_steps_to_create_cash_receipt
+  - intent: placement
+  - action: utter_placement
 
-- story: add multiple parties
+- story: teachers
   steps:
-  - intent: add_multiple_parties
-  - action: utter_add_multiple_parties
+  - intent: teachers
+  - action: utter_teachers
 
-- story: extra collection
+- story: hostel
   steps: 
-  - intent: extra_collection
-  - action: utter_extra_collection
+  - intent: hostel
+  - action: utter_hostel
 
-- story: discount
+- story: document
   steps:
-  - intent: discount_cash_receipt
-  - action: utter_discount_cash_receipt
+  - intent: document
+  - action: utter_document
 
-- story: block and unblock
+- story: class timings
   steps: 
-  - intent: block_and_unblock
-  - action: utter_block_and_unblock
+  - intent: class_timings
+  - action: utter_class_timings
 
-- story: card payment
+- story: canteen
   steps: 
-  - intent: card_payment
-  - action: utter_card_payment
+  - intent: canteen
+  - action: utter_canteen
 
-- story: cheque payment
+- story: transport
   steps:
-  - intent: cheque_payment
-  - action: utter_cheque_payment
+  - intent: transport
+  - action: utter_transport
 
-- story: credit receipt
+- story: last rank
   steps:
-  - intent: credit_receipt
-  - action: utter_credit_receipt
+  - intent: last_rank
+  - action: utter_last_rank
 
-- story: upi payment
+- story: facilities
   steps:
-  - intent: upi_payment
-  - action: utter_upi_payment
+  - intent: facilities
+  - action: utter_facilities
 
-- story: credit receipt
+- story: no of seats
   steps:
-  - intent: credit_receipt
-  - action: utter_credit_receipt
+  - intent: no_of_seats
+  - action: utter_no_of_seats
 
-- story: change roe
+- story: syllabus
   steps:
-  - intent: change_roe
-  - action: utter_change_roe
+  - intent: syllabus
+  - action: utter_syllabus
 
-- story: change receipt date
+- story: scope
   steps:
-  - intent: change_receipt_date
-  - action: utter_change_receipt_date
-
-- story: advanced receipt
-  steps:
-  - intent: advanced_receipt
-  - action: utter_advanced_receipt
-
-- story:  vat bank charges
-  steps:
-  - intent: separate_vat_bank_charges
-  - action: utter_separate_vat_bank_charges
-
-- story: cheque receipt
-  steps:
-  - intent: cheque_receipt
-  - action: utter_cheque_receipt
-
-- story: generate payment
-  steps:
-  - intent: generate_payment
-  - action: utter_generate_payment
-
-- story: steps to generate payment
-  steps:
-  - intent: steps_to_generate_payment
-  - action: utter_steps_to_generate_payment
-
-- story: extra payment
-  steps:
-  - intent: extra_payment
-  - action: utter_extra_payment
-
-- story: deduction payment
-  steps:
-  - intent: deduction_payment
-  - action: utter_deduction_payment
+  - intent: scope
+  - action: utter_scope

@@ -22,6 +22,6 @@ def generate_nlu_file(csv_file, output_file):
             for example in examples:
                 file.write(f"    - {example}\n")
 
-csv_file = "/Users/indrajanambiar/Documents/semester4/internship/rasa_final_files/rasa_final/nlu.csv"
-output_file = "/Users/indrajanambiar/Documents/semester4/internship/rasa_final_files/rasa_final/data/nlu.yml"
+csv_file = "C:\Users\ashik\Documents\Rasa\rasa_chatbot\nlu.csv"
+output_file = "C:\Users\ashik\Documents\Rasa\rasa_chatbot\data\nlu.yml"
 generate_nlu_file(csv_file, output_file)

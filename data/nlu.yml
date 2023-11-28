@@ -16,6 +16,7 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+
 - intent: goodbye
   examples: |
     - cu
@@ -29,6 +30,7 @@ nlu:
     - bye bye
     - see you later
     - close
+
 - intent: affirm
   examples: |
     - yes
@@ -37,6 +39,7 @@ nlu:
     - of course
     - that sounds good
     - correct
+
 - intent: deny
   examples: |
     - no
@@ -46,6 +49,7 @@ nlu:
     - don't like that
     - no way
     - not really
+
 - intent: mood_great
   examples: |
     - perfect
@@ -62,6 +66,7 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -78,6 +83,7 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -86,269 +92,208 @@ nlu:
     - am I talking to a human?
     - who are you?
     - what is your name?
-- intent: receipt_creation
+
+- intent: fee structure
   examples: |
-    - How can i generate a cash receipt
-    - How can i create a cash receipt
-    - How can i develop a cash receipt
-    - Where can i generate a cash receipt
-    - From Where can i generate a cash receipt
-    - Where is the link to generate a cash receipt
-    - Where is the module for generating a receipt
-    - Where the module to generate a cash receipt available
-    - Where the module to create a receipt available
-    - Where the link to generate a cash receipt available
-- intent: steps_to_create_cash_receipt
+    - Can you provide the fees structure for the MSc in Data Science program
+    - What is the tuition cost for the MSc in Artificial Intelligence program
+    - I'm interested in MCA. Could you share the fees details for the Master of Computer Applications program
+    - What are the tuition and other associated fees for pursuing MSc in Data Science
+    - Could you give me information on the fees for the MSc in Artificial Intelligence program,including any additional costs
+    - I'm considering MSc in AI. Can you provide details on the total fees and any available scholarships
+    - What is the financial structure for MCA, including tuition and any other fees
+    - Are there any specific fees I should be aware of when enrolling in the MSc Data Science program
+    - What is the fee breakdown for the MSc in Artificial Intelligence, including any miscellaneous expenses
+    - Could you guide me on the fee structure for the MCA program, and if there are any payment plans available
+
+- intent: Placement
   examples: |
-    - What are the steps to create a cash receipt?
-    - What is the process for producing a cash receipt?
-    - What steps should I follow to create a cash receipt?
-    - What is the method for creating a cash receipt?
-    - What is the procedure for generating a cash receipt?
-    - What are the guidelines for generating a cash receipt?
-    - What is the approach to creating a cash receipt?
-    - What are the steps required to generate a cash receipt?
-    - What are the instructions for creating a cash receipt?
-    - What are the necessary steps to create a cash receipt?
-- intent: add_multiple_parties
+    - What are the key considerations for choosing a placement during an MSc in Data Science program
+    - Can you provide insights into the significance of industry placements for students pursuing an MSc in Artificial Intelligence
+    - How does the placement process differ for MSc Data Science and MCA programs, and what factors should students prioritize
+    - What role does industry exposure play in enhancing the learning experience of students in MSc AI programs through internships and placements
+    - Are there specific companies or sectors that actively recruit graduates from MCA programs for placements, and what skills are they typically looking for
+    - How can students prepare themselves for successful placements during their MSc in Artificial Intelligence studies
+    - What are the emerging trends in industry placements for students pursuing MSc in Data Science, and how can they stay competitive in the job market
+    - Are there any specialized placement programs or partnerships that MCA students should be aware of to enhance their career prospects
+    - How do MSc in AI programs facilitate connections with industry professionals and organizations for potential placements
+    - Can you share success stories or testimonials of students who secured notable placements after completing their MSc in Data Science or MCA
+
+- intent: Teachers
   examples: |
-    - How can i add multiple parties in a cash receipt?
-    - How can i include multiple parties in a cash receipt?
-    - How can i participate multiple parties in a cash receipt?
-    - What is the process for including multiple recipients on a cash receipt?
-    - Is there a way to list multiple parties on a cash receipt?
-    - What is the procedure for including multiple parties on a cash receipt?
-    - What is the technique for adding more than one parties on a cash receipt?
-    - What is the approach for including multiple parties on a cash receipt?
-- intent: extra_collection
+    - How would you describe the teaching style of the instructors in the department
+    - Can you provide insights into the level of approachability and friendliness of the teachers
+    - What is the general atmosphere like between students and faculty within the department
+    - Are there opportunities for students to engage in one-on-one discussions with teachers
+    - How do teachers in the department support students outside of regular class hours
+    - In your experience, how accessible are teachers for questions or concerns
+    - Can you share any anecdotes about positive interactions with teachers in the department
+    - Is there a sense of mentorship between teachers and students in your academic department
+    - What resources or initiatives does the department have to foster positive teacher-student relationships
+    - How does the department encourage open communication between students and teachers
+
+- intent: Hostel
   examples: |
-    - What steps do I need to take to include an extra collection in a cash receipt?
-    - What are the steps to include an extra collection in a cash receipt?
-    - What is the way to include an extra collection in a cash receipt?
-    - What approach should I take to include an extra collection in a cash receipt?
-    - What is the way to insert an extra collection into a cash receipt?
-    - What is the approach to append a extra collection to a receipt?
-    - What is the process for appending a extra collection to a cash receipt?
-    -  I want to add extra collection to my receipt, how can i do that?
-    - How can I include an extra collection in my receipt?
-    - How can i add extra collection in cash receipt?
-- intent: discount_cash_receipt
+    - Are there any hostels available for students near the campus?
+    - Can you provide information about the student hostels in the vicinity?
+    - How do I apply for on-campus hostel accommodation as a student?
+    - What are the amenities provided in the student hostels?
+    - Are there any off-campus hostel options that are commonly chosen by students?
+    - Could you recommend affordable hostels for students in the area?
+    - What is the process for securing a hostel room for the upcoming academic year?
+    - Can you share details about the safety measures in place at student hostels?
+    - Are there any specific rules or regulations regarding hostel stay for students?
+    - How far are the nearest hostels from the university campus?
+
+- intent: Documents
   examples: |
-    - How can i add discount in cash receipt?
-    - What steps do I need to take to include a discount in a cash receipt?
-    - What are the steps to include an discount in a cash receipt?
-    - What is the way to include an discount in a cash receipt?
-    - What approach should I take to include an discount in a cash receipt?
-    - What is the way to insert an discount into a cash receipt?
-    - What is the approach to append a discount to a receipt?
-    - What is the process for appending a discount to a cash receipt?
-    -  I want to add discount to my receipt, how can i do that?
-    - How can I include an discount in my receipt?
-- intent: block_and_unblock
+    - What documents do I need to submit during the admission process?
+    - Can you provide a list of required documents for admission?
+    - Which paperwork is necessary for student admissions?
+    - What are the key documents needed for the admission application?
+    - Could you outline the documentation required for student enrollment?
+    - What paperwork is essential for the admission of new students?
+    - Can you guide me on the submission of admission-related documents?
+    - What is the document submission procedure for student enrollment?
+    - Are there specific forms or certificates required for admission?
+    - Could you specify the documents needed for the admission process?
+
+- intent: Class_timings
   examples: |
-    - what is account bloking and how to unblock
-    - How can I tell if my account has been blocked?
-    - How can I prevent my account from being blocked in the future?
-    -  Can a blocked account be reinstated, and what steps are required to do so?
-    - What are the reasons why an account might get blocked?
-    - Is it possible to have a blocked account reinstated?
-    - How long does it typically take to get a blocked account reinstated?
-    - Can I still access my account while it is blocked?
-    -  Is it possible to unblock a blocked account, and if so, how?
-    - What steps do I need to take to reinstate a blocked account?
-- intent: card_payment
+    - Can you provide information about the class timings ?
+    - What are the working hours for classes ?
+    - How can I find my class schedule and timings?
+    - Is there a tool or platform where I can check my upcoming class timings?
+    - Can you help me understand the schedule for [course code] classes this semester?
+    - What is the duration of each class session ?
+    - Are there any changes to the regular class timings this week?
+    - Where can I find details about the working hours for the Department ?
+    - Is there a specific portal or app to check class timings and locations?
+    - What should I do if I have a scheduling conflict with my classes?
+
+- intent: Canteen
   examples: |
-    - How do I choose card payment as a mode of receipt?
-    - What are the steps involved in selecting card payment as a receipt method?
-    - What is the process for selecting card payment as a mode of receipt?
-    - Is it possible to use a credit card for receiving payments?
-    - What is the process for setting up a credit card as a mode of payment reception?
-    - Can you walk me through the steps for selecting a credit card for payment receipt?
-    - How can I add a credit card as a payment method to receive payments?
-    - What information do I need to provide when choosing a credit card as a receipt method?
-- intent: cheque_payment
+    - Can you provide information about the location of the canteen on campus?
+    - What food options are available for hostel residents? Is there a hostel meal plan?
+    - Are there specific dining facilities for students in the hostels?
+    - Tell me about the variety of food available in the campus canteen.
+    - For prospective students, what dining options are offered on campus?
+    - Is there a cafeteria or canteen that caters to dietary preferences for students?
+    - Can you provide details about the meal services available for students in hostels?
+    - What kind of food services are provided for students living on campus?
+    - Do you have any information about the meal plans for students at the university?
+   - As a prospective student, where can I find information about campus dining facilities?
+
+- intent: Transport
   examples: |
-    - What is the process for making a payment using a cheque?
-    - Can you walk me through the steps involved in paying with a cheque?
-    - What information do i need to include on a cheque when making a payment?
-    - Could you guide me through the process of making a payment using a cheque?
-    - What is the stepbystep procedure for paying via cheque?
-    - Can you explain how to make a payment using a cheque?
-    - What are the steps I need to take to pay with a cheque?
-    -  How do i make a payment using a cheque, and can you break down the process for me?
-    - Could you please provide me with an overview of the steps required to pay with a cheque?
-    - Would you be able to demonstrate the process of making a payment via cheque?
-    -  What does the process of paying with a cheque, andcould you walk me through it?
-- intent: credit_receipt
+    - Is there a college bus service available for students?"
+    - What are the transportation options for students at the college?
+    - Tell me about the conveyance facilities provided for students, especially regarding college buses?
+    - Is there a shuttle service for students who live off-campus?
+    - Can you provide information on public transportation accessibility for students?
+    - How do students typically commute to the college campus?
+    - Are there any special transportation arrangements for students with disabilities?
+    - What's the availability of parking facilities for students who commute by car?
+    - Do you offer any support or guidance for students regarding local transportation?
+    - Is there a designated area for drop-off and pick-up for students using private transportation?
+
+- intent: Last_rank
   examples: |
-    - How to make a credit Receipt?
-    - What are the steps to create a credit receipt?
-    - Can you provide a guide for making a credit receipt?
-    - What information should be included in a credit receipt?
-    - What is the process for generating a credit receipt?
-    - What are the best practices for preparing a credit receipt?
-    - How can I ensure the accuracy of a credit receipt?
-    - What are some common mistakes to avoid while making a credit receipt?
-    - How can i generate a credit receipt?
-    - What is the process for creating a credit receipt?
-    - Can you explain how to generate a credit receipt?
-    - What steps are involved in producing a credit receipt?
-    - Is there a specific method for creating a credit receipt?
-    - How do I go about making a credit receipt?
-    - What are the requirements for generating a credit receipt?
-    - Could you walk me through the process of creating a credit receipt?
-    - Can you provide instructions for producing a credit receipt?
-    - What do I need to do to generate a credit receipt?
-    - Is there a template or format I should use when creating a credit receipt?
-- intent: upi_payment
+    - Last rank details for admission in [specific university/college] for [program name]."
+    - What was the last rank admitted for [program name] in [year]?"
+    - Tell me the minimum rank required for admission in [program name]."
+    - Last year's admission last rank for [category] in [university/college]."
+    - What is the cutoff rank for [program name] admission this year?"
+    - Give me information about the lowest rank accepted for [program name] admission."
+    - Last rank details for [category] in [university/college] for [year]."
+    - I need to know the last rank admitted for [program name] in [university]."
+    - Provide details on the lowest rank accepted for [category] in [program name]."
+    - What was the cutoff rank for [category] in [year] for [program name]?"
+
+- intent: Facilities
   examples: |
-    - What are the steps for making a UPI payment?
-    - How can i done upi payment ?
-    - Can you provide a guide on how to do a UPI payment?
-    - How do I initiate a UPI payment?
-    - What is the process for completing a UPI payment?
-    - Are there any specific requirements for making a UPI payment?
-    - What are the different ways to make a UPI payment?
-    - Is there any limit on the amount of money I can transfer through UPI?
-    - How do I ensure the security of my UPI payment?
-    - Are there any fees associated with UPI payments?
-    - What should I do if my UPI payment fails?
-- intent: change_roe
+    - What facilities does the department offer for students, such as labs, WiFi, and bathrooms?
+    - Can you provide information on the available amenities in the department, including laboratories, WiFi access, and restroom facilities?
+    - What are the key facilities that prospective students can expect from the department if they decide to enroll?
+    - Tell me about the infrastructure and facilities provided by the department for students, including any available laboratories and WiFi services.
+    - As a student, what amenities are available in the department, such as labs, WiFi, and restrooms?
+    - For someone considering admission, what details can you share about the facilities offered by the department, especially in terms of labs and connectivity?
+    - What provisions does the department have in terms of facilities, like laboratories, WiFi, and other student necessities?
+    - Could you outline the facilities provided by the department to support students, including any available laboratories, WiFi options, and restroom facilities?
+    - As a prospective student, what should I know about the facilities offered by the department, such as labs, WiFi, and other essential services?
+    - Provide details on the amenities and facilities available in the department that would be relevant to a person seeking admission.
+
+- intent: No_of_seats
   examples: |
-    - How can i change the ROE?
-    - How do i modify the ROE?
-    - How to change Rate of Exchange?
-    - Steps to Modify Rate of Exchange?
-    - Maximum allowed ROE adjustment variance.
-    - What is the procedure for modifying the Exchange Rate?
-    - What is the process for altering the ROE?
-    - What is the maximum permissible variance for ROE adjustment?
-    - The highest permissible difference in ROE adjustment?
-    - What are the procedures for changing the ROE?
-- intent: change_receipt_date
+    - How many seats are available for the upcoming academic year in my preferred course?
+    - What's the seat count for the program I'm considering for admission?
+    - Can you share the number of seats for prospective students?
+    - What's the total seat capacity for the courses you offer?
+    - How competitive is admission based on the available seats?
+    - Are there reserved seats, and how does that impact admissions?
+    - Can you provide the seat breakdown for popular courses?
+    - How many seats are there for undergraduate programs?
+    - What's the student-to-faculty ratio for my chosen course?
+    - For someone applying, can you specify the seat limit per program?
+
+- intent: Syllabus
   examples: |
-    - How can i change the receipt date?
-    - How can i change the transaction date limit?
-    - How do I modify the transaction date limit?
-    - How do I adjust the transaction date limit?
-    - What is the process for altering the date on the receipt?
-    - What is the process to modify the receipt date?
-    - What is the procedure for adjusting the transaction date limit?
-    - What is the procedure for altering the transaction date range?
-    - What is the process for adjusting the transaction date boundary?
-    - What is the method for modifying the transaction date range?
-- intent: advanced_receipt
+    - Can you provide the detailed syllabus for MSc Computer Science?"
+    - What are the key topics covered in the MCA syllabus?"
+    - Tell me about the syllabus structure for MSc in Computer Science."
+    - What subjects are included in the MCA program syllabus?"
+    - Provide an overview of the syllabus for MSc in Computer Science and MCA."
+    - I'm considering admission. What's covered in the MSc CS syllabus?"
+    - For someone looking to join MCA, what's the syllabus like?"
+    - Could you list the major subjects in MSc Computer Science syllabus?"
+    - What are the core modules in the MCA syllabus?"
+    - Give me insights into the syllabus for both MSc CS and MCA programs.”
+
+- intent: Scope
   examples: |
-    - What is Advanced Receipt Doc.No?
-    - Why advanced receipt is used?
-    - How to create an advanced receipt?
-    - Steps to create an advanced receipt.
-    - Uses of advanced receipt.
-    - Could you explain what Advanced Receipt Doc. No. means?
-    - What does the term Advanced Receipt Doc. No. mean?
-    - What are the steps for generating an advanced receipt?
-    - What is the process for producing an advanced receipt?
-    - What are the purposes of an advanced receipt?
-- intent: separate_vat_bank_charges
-  examples: |
-    - What is the purpose of the line item for separately recording bank commission?
-    - How to separate VAT and bank charges from the receipt?
-    - What is the use of Line for bank commission separate entry?
-    - What is the method for segregating VAT and bank charges from the receipt?
-    - What are the steps to distinguish VAT and bank charges from the receipt?
-    - What is the purpose of including a separate line item for bank commission?
-    - What is the purpose of using a separate line for bank commission entry?
-    - What is the purpose of creating a separate line for bank commission entry?
-    - What are the steps to separate VAT and bank charges from a receipt?
-    - is it possible to seperate VAT and bank charges from receipt?
-- intent: cheque_receipt
-  examples: |
-    - How can i generate a cheque receipt?
-    - Can you guide me on how to create a cheque receipt?
-    - What are the steps involved in generating a cheque receipt?
-    - Is there a template available for generating a cheque receipt?
-    - What information should be included in a cheque receipt?
-    - Can you recommend software for creating cheque receipts?
-    - How can I design a custom cheque receipt for my business?
-    - What is the purpose of a cheque receipt and how do I create one?
-    - Are there any legal requirements for generating a cheque receipt?
-    - What is the procedure for generating a cheque receipt?
-    - How do I go about creating a cheque receipt?
-    - What are the steps to create a cheque receipt?
-    - What are the stages of producing a cheque receipt?
-- intent: generate_payment
-  examples: |
-    - How can i generate a payment
-    - How can i create a payment
-    - How can i develop a payment
-    - Where can i generate a payment
-- intent: steps_to_generate_payment
-  examples: |
-    - What are the steps to create a payment?
-    - What is the process for payment?
-    - What are the steps required to generate a payment?
-    - What are the instructions for creating a payment?
-    - What are the necessary steps to create a payment?
-    - what are the steps to create a payment
-- intent: extra_payment
-  examples: |
-    - How can i add extra payment?
-    - What steps do I need to take to include an extra payment ?
-    - What are the steps to include an extra payment?
-    - What is the way to include an extra payment?
-- intent: deduction_payment
-  examples: |
-    - How can i add deduction in payment?
-    - What steps do I need to take to include a deduction in a payment?
-    - What are the steps to include a deduction in a payment?
-    - What is the way to include a deduction in a payment?
-    - What approach should I take to include a deduction in a payment?
+    - Tell me about the scope of MSC CS and MCA for students considering admission."
+    - What opportunities does pursuing MSC CS or MCA open up for students?"
+    - Can you provide insights into the career scope for someone aiming to enroll in MSC CS or MCA?"
+    - What are the key aspects of career growth after completing an MSC CS or MCA program?"
+    - Describe the potential career paths and job opportunities for students pursuing MSC CS or MCA."
+    - How does the scope of MSC CS differ from MCA in terms of career prospects?"
+    - What industries or sectors actively seek professionals with an MSC CS or MCA background?"
+    - What skills and knowledge can students expect to gain from an MSC CS or MCA program, enhancing their career prospects?"
+    - Are there any specific trends or advancements in technology that impact the scope of MSC CS or MCA programs?"
+    - Can you provide examples of successful career trajectories for individuals with an MSC CS or MCA degree?”
+
 
 - intent: inform_user_details
   examples: |
-    - I am [indraja](PERSON)
-    - I am [Indraja](PERSON)
-    - I am [agy](PERSON)
-    - I am [Agy](PERSON)
-    - My name is [mithun](PERSON)
+    - I am [Deepika](PERSON)
+    - I am [Saranya](PERSON)
+    - I am [Joyal](PERSON)
+    - I am [Ashik](PERSON)
+    - My name is [Abhijith](PERSON)
     - My name is [anu](PERSON)
-    - My name is [Dibyasha](PERSON)
-    - My name is [bindu](PERSON)
-    - call me [ajay](PERSON)
-    - call me [Navaz](PERSON)
-    - call me [Ananthan](PERSON)
-    - call me [Arjun](PERSON)
+    - My name is [Hari](PERSON)
+    - My name is [Unni](PERSON)
+    - call me [Ajith](PERSON)
+    - call me [Sreerag](PERSON)
+    - call me [Nandu](PERSON)
+    - call me [chodu](PERSON)
     - myself [arjun](PERSON)
     - myself [Amal](PERSON)
-    - myself [Arun](PERSON)
-    - myself [sanil](PERSON)
-    - I go by the name of [Anshad](PERSON)
-    - I go by the name of [Vivek](PERSON)
-    - I go by the name of [Aadhi](PERSON)
-    - I go by the name of [Adarsh](PERSON)
-    - [sreejith](PERSON) is what people call me
-    - [Anoop](PERSON) is what people call me
-    - [sharon](PERSON) is what people call me
-    - [aswin](PERSON) is what people call me
-    - You can call me [Fawas](PERSON)
-    - You can call me [sachin](PERSON)
-    - You can call me [devika](PERSON)
-    - You can call me [arunima](PERSON)
-    - [subin](PERSON)
-    - [akash](PERSON)
-    - [megha](PERSON)
-    - [silpa](PERSON)
-    - my email is [indraja@example.com](email)
-    - [indraja@gmail.com](email)
-    - [indraja.ds21@duk.ac.in](email)
-    - [john.doe@example.com](email)
-    - [mary.smith@gmail.com](email)
-    - [alex.wilson@yahoo.com](email)
-    - [sarah.jones@hotmail.com](email)
-    - [michael.brown@outlook.com](email)
+    - myself [Pauly](PERSON)
+    - myself [Jazim](PERSON)
+    - I go by the name of [Anas](PERSON)
+    - I go by the name of [Archa](PERSON)
+    - I go by the name of [Sneha](PERSON)
+    - I go by the name of [baby](PERSON)
+    - [babykuttan](PERSON) is what people call me
+    - [binta](PERSON) is what people call me
+    - [sajidha](PERSON) is what people call me
+    - [Reji](PERSON) is what people call me
+    - You can call me [Mariyam](PERSON)
+    - You can call me [Sherin](PERSON)
+    - You can call me [Anagha](PERSON)
 
-
-- regex: email
-  examples: |
-    - [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
+# - regex: email
+#   examples: |
+#     - [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
     

@@ -27,7 +27,7 @@ def convert_csv_to_stories(csv_file, output_file):
     with open(output_file, "w") as file:
         yaml.dump(data, file)
 
-csv_file = "/Users/indrajanambiar/Documents/semester4/internship/rasa_final_files/rasa_final/stories.csv"
-output_file = "/Users/indrajanambiar/Documents/semester4/internship/rasa_final_files/rasa_final/data/stories.yml"
+csv_file = "C:\Users\ashik\Documents\Rasa\rasa_chatbot\stories.csv"
+output_file = "C:\Users\ashik\Documents\Rasa\rasa_chatbot\data\stories.yml"
 
 convert_csv_to_stories(csv_file, output_file)

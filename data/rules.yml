@@ -12,13 +12,13 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: User details form
-  steps:
-  - intent: greet
-  - action: userdetailsform
-  - active_loop: userdetailsform
-  - active_loop: null
-  - action: utter_email_tnx
+# - rule: User details form
+#   steps:
+#   - intent: greet
+#   - action: userdetailsform
+#   - active_loop: userdetailsform
+#   - active_loop: null
+#   - action: utter_email_tnx
   
 
 - rule: Ask the user to rephrase whenever they send a message with low NLU confidence

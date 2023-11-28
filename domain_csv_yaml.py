@@ -36,8 +36,8 @@ def convert_csv_to_domain(csv_file, output_file):
 
 
 
-csv_file = "/Users/indrajanambiar/Documents/semester4/internship/rasa_final_files/rasa_final/domain.csv"
-output_file = "/Users/indrajanambiar/Documents/semester4/internship/rasa_final_files/rasa_final/domain.yml"
+csv_file = "C:\Users\ashik\Documents\rasa_chatbot\domain.csv"
+output_file = "C:\Users\ashik\Documents\rasa_chatbot\domain.yml"
 
 convert_csv_to_domain(csv_file, output_file)
 
